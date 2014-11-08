@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/'
+let g:netrw_dirhist_2='/home'
+let g:netrw_dirhist_3='/home/devon'
+let g:netrw_dirhist_4='/mnt/Ubuntu/home/devon/Documents/SDL/sdl_test/src'
+let g:netrw_dirhist_5='/home/devon/Documents/opengl/base'
+let g:netrw_dirhist_6='/home/devon/Documents/opengl/base/src'

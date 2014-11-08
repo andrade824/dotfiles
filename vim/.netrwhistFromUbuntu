@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/lib/modules/3.11.0-15-generic/build/kernel'
+let g:netrw_dirhist_2='/lib/modules/3.11.0-15-generic/build'
+let g:netrw_dirhist_3='/lib/modules/3.11.0-15-generic'
+let g:netrw_dirhist_4='/lib/modules'
+let g:netrw_dirhist_5='/lib/modules/3.11.0-15-generic'
+let g:netrw_dirhist_6='/home/devon/Documents/drivers/first_driver'
+let g:netrw_dirhist_7='/home/devon'
