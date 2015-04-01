@@ -1,3 +1,8 @@
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
 # Completion and custom prompt support
 autoload -U compinit promptinit
 compinit
@@ -17,6 +22,9 @@ export TERM=xterm-256color
 
 # Add the android sdk tools to the path
 export PATH=$PATH:/opt/android-sdk/platform-tools
+
+# Source the scripts needed to run Vivado 2014.4
+source /opt/Xilinx/Vivado/2014.4/settings64.sh
 
 ## Modified commands ## {{{
 alias diff='colordiff'              # requires colordiff package
