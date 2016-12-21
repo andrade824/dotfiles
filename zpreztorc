@@ -1,10 +1,16 @@
 # Color output (auto set to 'no' on dumb terminals).
 zstyle ':prezto:*:*' color 'yes'
 
-zstyle ':prezto:load' pmodule 'environment' 'terminal' 'archive' 'command-not-found' 'utility' 'completion' 'directory' 'spectrum' 'syntax-highlighting' 'history-substring-search' 'prompt'
+zstyle ':prezto:load' pmodule 'environment' 'editor' 'terminal' 'git' 'history' 'pacman' 'archive' 'command-not-found' 'completion' 'directory' 'spectrum' 'syntax-highlighting' 'history-substring-search' 'autosuggestions' 'prompt'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'vi'
+
+# Enable yaourt support
+zstyle ':prezto:module:pacman' frontend 'yaourt'
+
+# Autosuggestion highlight color
+zstyle ':prezto:module:autosuggestions:color' found 'fg=blue'
 
 #
 # Git

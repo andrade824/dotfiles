@@ -20,12 +20,6 @@ alias yt=yaourt
 # Make sure everybody knows terminator supports 256-colors
 export TERM=xterm-256color
 
-# Add the android sdk tools to the path
-export PATH=$PATH:/opt/android-sdk/platform-tools
-
-# Source the scripts needed to run Vivado 2014.4
-source /opt/Xilinx/Vivado/2014.4/settings64.sh
-
 ## Modified commands ## {{{
 alias diff='colordiff'              # requires colordiff package
 alias grep='grep --color=auto'
@@ -70,7 +64,7 @@ alias lt='ll -rt'                   # sort by date
 alias lm='la | more'
 # }}}
 
-# Up/down browses histor (if field is empty), or searches (not empty)
+# Up/down browses history (if field is empty), or searches (not empty)
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
