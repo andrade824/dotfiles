@@ -2,6 +2,12 @@
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# 
+# Need to install zsh and prezto separately before running this script.
+#
+# After running this script, you need to download Vundle for vim, and then open up vim
+# (ignore the missing modules warnings) and run :PluginInstall. This will install
+# all of the wanted modules.
 ############################
 
 ########## Variables
