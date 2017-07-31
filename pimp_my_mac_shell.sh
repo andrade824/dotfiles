@@ -2,10 +2,6 @@
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
-# 
-# Need to install zsh and prezto separately before running this script.
-#
-# Powerline fonts for Mac: https://github.com/powerline/fonts
 #
 # After running this script, you need to download Vundle for vim, and then open up vim
 # (ignore the missing modules warnings) and run :PluginInstall. This will install
@@ -27,7 +23,6 @@ files="bashrc vimrc vim zshrc zpreztorc"    # list of files/folders to symlink i
 brew install zsh
 
 # Install prezto
-zsh
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 # Set Zsh as default shell
@@ -42,9 +37,6 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
-
-# Install Vundle for vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
@@ -63,3 +55,7 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+# Install Vundle for vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+vim
